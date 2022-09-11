@@ -17,6 +17,7 @@ class ChromeDriver:
             opt.add_argument('headless')
             opt.add_argument('--disable-gpu')
             opt.add_argument('--no-sandbox')
+            opt.add_argument('--disable-dev-shm-usage')  
             opt.binary_location = os.environ.get("GOOGLE_CHROME_PATH")
             driver = webdriver.Chrome(os.environ.get("CHROMEDRIVER_PATH"), options=opt)
             return driver
