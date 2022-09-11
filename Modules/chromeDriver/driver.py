@@ -9,10 +9,15 @@ import time
 class ChromeDriver:
     def getDriver(self):
         try:
-            self.driver_exe = "libraries\chromedriver.exe"
+            #self.driver_exe = "libraries\chromedriver.exe"
+            GOOGLE_CHROME_PATH = '/app/.apt/usr/bin/google_chrome'
+            CHROMEDRIVER_PATH = '/app/.chromedriver/bin/chromedriver'
             opt = webdriver.ChromeOptions()
             opt.add_argument('headless')
-            driver = webdriver.Chrome(self.driver_exe, options=opt)
+            chrome_options.add_argument('--disable-gpu')
+            chrome_options.add_argument('--no-sandbox')
+            chrome_options.binary_location = GOOGLE_CHROME_PATH
+            driver = webdriver.Chrome(CHROMEDRIVER_PATH, options=opt)
             return driver
         except Exception as e:
             print(e)
