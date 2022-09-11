@@ -26,7 +26,7 @@ class ChromeDriver:
 ########################################################################################################################
 
     def scrollPageEnd(self,driver):
-        wait = WebDriverWait(driver, 15)
+        wait = WebDriverWait(driver, 5)
         for item in range(5):
             wait.until(EC.visibility_of_element_located((By.TAG_NAME, "body"))).send_keys(Keys.END)
             time.sleep(2)
