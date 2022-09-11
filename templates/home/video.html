@@ -1,0 +1,249 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %} Dashboard {% endblock title %}
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <div class="container-fluid py-4">
+      <div class="row">
+        <div class="col mb-lg-0 mb-4">
+          <div class="card">
+            <div class="card-body p-6">
+              <div class="row">
+                <h3>{{videoData.title}}</h3>
+                <div class="col">
+                  <div class="d-flex flex-column h-100">
+                    <iframe src={{videoData.embed_url}} allowfullscreen="" height="615" width="100%" frameborder="0"></iframe>
+                  </div>
+                </div>
+                <div>
+                  <div class="col ms-auto text-center mt-2 mt-lg-0">
+                    <form action="/download" method="POST">
+                      <input type="hidden" name="url" value='{{videoData.embed_url}}' />
+                      <input type="hidden" name="title" value='{{videoData.title}}' />
+                      <button onclick="getLink()" class="btn bg-gradient-info w-40 mt-4 mb-0">Download</button>
+                    </form>
+                  </div>
+                  <div class="col ms-auto text-center mt-2 mt-lg-0">
+                    <br>
+                    <h5 id="s3Link">File will be placed in S3 also</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <br><center>Video Analysis*</center>
+      </div>
+      <div class="row mt-4">
+        <div class="col mb-xl-0 mb-4">
+          <div class="card">
+            <div class="card-body p-3">
+              <div class="row">
+                <div class="col-8">
+                  <div class="numbers">
+                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Views</p>
+                    <h5 class="font-weight-bolder mb-0">
+                      {{videoData.views}}
+                    </h5>
+                  </div>
+                </div>
+                <div class="col-4 text-end">
+                  <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                    <i class="fa fa-eye text-lg opacity-10" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-xl-0 mb-4">
+          <div class="card">
+            <div class="card-body p-3">
+              <div class="row">
+                <div class="col-8">
+                  <div class="numbers">
+                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Likes</p>
+                    <h5 class="font-weight-bolder mb-0">
+                      {{videoData.likes}}
+                    </h5>
+                  </div>
+                </div>
+                <div class="col-4 text-end">
+                  <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                    <i class="fa fa-thumbs-up text-lg opacity-10" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-xl-0 mb-4">
+          <div class="card">
+            <div class="card-body p-3">
+              <div class="row">
+                <div class="col-8">
+                  <div class="numbers">
+                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Comments</p>
+                    <h5 class="font-weight-bolder mb-0">
+                      {{videoData.cmnts}}
+                    </h5>
+                  </div>
+                </div>
+                <div class="col-4 text-end">
+                  <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                    <i class="fa fa-comments text-lg opacity-10" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-xl-0 mb-4">
+          <div class="card">
+            <div class="card-body p-3">
+              <div class="row">
+                <div class="col-8">
+                  <div class="numbers">
+                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Duration</p>
+                    <h5 class="font-weight-bolder mb-0">
+                      {{videoData.duration}}
+                    </h5>
+                  </div>
+                </div>
+                <div class="col-4 text-end">
+                  <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                    <i class="fa fa-clock text-lg opacity-10" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col mb-lg-0 mb-4">
+          <div class="card z-index-2">
+            <div class="card-body p-6">
+              <center><h6>Views-Likes-Comments Relation</h6></center>
+              <div class="bg-gradient-dark border-radius-lg py-6 pe-1 mb-3">
+                <div class="chart">
+                  <canvas id="chart-bars" class="chart-canvas" height="170"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row my-4">
+        <div class="col mb-md-0 mb-4">
+          <div class="card">
+            <div class="card-header pb-0">
+              <div class="row">
+                <div class="col-lg-6 col-7">
+                  <h3>Comments</h3>
+                </div>
+              </div>
+            </div>
+            <div class="card-body px-0 pb-2">
+              <div class="table-responsive">
+                <table class="table align-items-center mb-0">
+                  <tbody>
+                    {% for cmntsData in commentsList %}
+                    <tr>
+                      <div class="px-4 py-1">
+                          <div class="justify-content-center">
+                            <h3 class="mb-0 text-sm">{{cmntsData.name}}</h3>
+                            <h6 class="mb-0 text-sm">{{cmntsData.modified}}</h6>
+                            <p style="display:inline-block;" class="mb-2">
+                            {{cmntsData.data}}
+                            </p>
+                            <br><br>
+                          </div>
+                        </div>
+                    </tr>
+                  {% endfor %}
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {% include "includes/footer.html" %}
+
+    </div>
+
+{% endblock content %}
+
+<!-- Specific JS goes HERE -->
+{% block javascripts %}
+
+  <script src="/static/assets/js/plugins/chartjs.min.js"></script>
+  <script>
+    var ctx = document.getElementById("chart-bars").getContext("2d");
+
+    new Chart(ctx, {
+      type: "pie",
+      data: {
+        labels: ["Views", "Likes", "Comments"],
+        datasets: [{
+          tension: 0.4,
+          borderWidth: 0,
+          borderRadius: 10,
+          borderSkipped: false,
+          backgroundColor: ["#b91d47","#00aba9","#2b5797","#e8c3b9","#1e7145"],
+          data: {{videoData.pieData}},
+          maxBarThickness: 6
+        }, ],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            display: true,
+          }
+        },
+        interaction: {
+          intersect: false,
+          mode: 'index',
+        },
+        scales: {
+          y: {
+            grid: {
+              drawBorder: false,
+              display: false,
+              drawOnChartArea: false,
+              drawTicks: false,
+            },
+            ticks: {
+              display: false
+            },
+          },
+          x: {
+            grid: {
+              drawBorder: false,
+              display: true,
+              drawOnChartArea: false,
+              drawTicks: false
+            },
+            ticks: {
+              display: false
+            },
+          },
+        },
+      },
+    });
+  </script>
+
+{% endblock javascripts %}

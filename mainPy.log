@@ -1,0 +1,677 @@
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 273-556-629
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:11:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:11:07] "GET /static/assets/css/nucleo-icons.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:11:07] "GET /static/assets/css/nucleo-svg.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:11:07] "GET /static/assets/css/dark-theme-core.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:11:07] "GET /static/assets/css/soft-ui-dashboard.css?v=1.0.6 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:11:07] "GET /static/assets/js/core/popper.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:11:07] "GET /static/assets/js/core/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:11:07] "GET /static/assets/js/plugins/perfect-scrollbar.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:11:07] "GET /static/assets/js/plugins/smooth-scrollbar.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:11:07] "GET /static/assets/js/dark-mode-handler.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:11:07] "GET /static/assets/js/soft-ui-dashboard.min.js?v=1.0.6 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:11:07] "GET /static/assets/img/darkLogo.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:11:07] "GET /static/assets/img/scrapeLogo1.png HTTP/1.1" 200 -
+INFO:root:Input URL for Youtube Channel - https://www.youtube.com/user/krishnaik06
+INFO:root:Valid Youtube Channel - https://www.youtube.com/user/krishnaik06
+INFO:werkzeug: * Detected change in 'C:\\Users\\Asus\\Anaconda3\\Lib\\site-packages\\pymongo\\settings.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Asus\\Anaconda3\\Lib\\site-packages\\pymongo\\mongo_client.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\libraries\\flask_cors\\decorator.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Asus\\Anaconda3\\Lib\\site-packages\\flask\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Asus\\Anaconda3\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Asus\\Anaconda3\\Lib\\site-packages\\werkzeug\\serving.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Asus\\Anaconda3\\Lib\\http\\server.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Asus\\Anaconda3\\Lib\\socketserver.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Asus\\Anaconda3\\Lib\\threading.py', reloading
+INFO:root:Channel Data inserted in MongoDB.....
+INFO:root:Video Data inserted in MongoDB.....
+ERROR:root:Channel Page - Traceback (most recent call last):
+  File "D:\iNeuron Data Science\Full Stack Data Science\YoutubeScrapper\SourceCode\UtubeScraper\main.py", line 30, in getChannel
+    channelData,videoList = scraping.Scraping().getChannelData(channel_url)
+TypeError: cannot unpack non-iterable NoneType object
+
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 273-556-629
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\scrapingData\\scraping.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\scrapingData\\scraping.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\scrapingData\\scraping.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 273-556-629
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:13:17] "[36mGET /static/assets/img/scrapeLogo1.png HTTP/1.1[0m" 304 -
+INFO:root:Input URL for Youtube Channel - https://www.youtube.com/user/krishnaik06
+INFO:root:Valid Youtube Channel - https://www.youtube.com/user/krishnaik06
+INFO:root:Channel Data inserted in MongoDB.....
+INFO:root:Video Data inserted in MongoDB.....
+INFO:root:Fetched Channel Data : {'profilePic': 'https://yt3.ggpht.com/ytc/AMLnZu_Ow7V1PyNJXmvxUmamZqNR3IMT94rkYdJ0mz-8xQ=s500-c-k-c0x00ffffff-no-rj', 'name': 'Krish Naik', 'description': "I am the cofounder of iNeuron and my experience is pioneering in machine learning, deep learning, and computer vision,an educator, and a mentor, with over 10 years' experience in the industry. This is my YouTube channel where I explain various topics on machine learning, deep learning, and AI with many real-world problem scenarios. I have delivered over 30 tech talks on data science, machine learning, and AI at various meet-ups, technical institutions, and community-arranged forums. My main aim is to make everyone familiar of ML and AI.Please subscribe and support the channel. As i love new technology, all these videos are free and I promise to make more interesting content as we go ahead.\nFor any collaboration drop me a mail at krishnaik06@gmail.com\n\nPlease free to drop a mail for Product unboxing, GPU's unboxing and any other collaboration", 'joined_date': '10 Feb 2012', 'totalViews': '60,862,751 views', 'subscribers': '648K subscribers', 'channelLink': 'https://www.youtube.com/user/krishnaik06', 'avg_views': '14,871', 'viewsList': [9300.0, 5200.0, 12000.0, 7000.0, 10000.0, 3900.0, 7500.0, 11000.0, 6900.0, 5300.0, 8200.0, 3900.0, 11000.0, 3000.0, 37000.0, 7700.0, 9700.0, 17000.0, 19000.0, 7600.0, 27000.0, 16000.0, 21000.0, 16000.0, 12000.0, 14000.0, 8900.0, 5300.0, 8300.0, 10000.0, 5200.0, 3700.0, 7300.0, 2200.0, 7100.0, 11000.0, 6700.0, 8000.0, 253000.0, 16000.0, 3700.0, 3600.0, 3500.0, 11000.0, 4600.0, 14000.0, 5900.0, 13000.0, 8500.0], 'avg_duration': 24.55, 'durationList': [8, 100, 4, 7, 6, 19, 33, 8, 7, 7, 4, 149, 26, 116, 164, 8, 130, 6, 10, 8, 3, 11, 3, 17, 8, 7, 67, 2, 8, 26, 6, 9, 10, 8, 7, 3, 9, 10, 8, 5, 19, 7, 17, 21, 13, 20, 9, 5, 45]}
+ERROR:root:Channel Page - Traceback (most recent call last):
+  File "D:\iNeuron Data Science\Full Stack Data Science\YoutubeScrapper\SourceCode\UtubeScraper\main.py", line 30, in getChannel
+    channelData,videoList = scraping.Scraping().getChannelData(channel_url)
+TypeError: cannot unpack non-iterable NoneType object
+
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:13:42] "[33mPOST /channel HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:13:42] "[36mGET /static/assets/css/nucleo-icons.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:13:42] "[36mGET /static/assets/css/nucleo-svg.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:13:42] "[36mGET /static/assets/css/soft-ui-dashboard.css?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:13:42] "[36mGET /static/assets/css/dark-theme-core.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:13:42] "[36mGET /static/assets/js/core/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:13:42] "[36mGET /static/assets/js/core/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:13:42] "[36mGET /static/assets/js/plugins/perfect-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:13:42] "[36mGET /static/assets/js/plugins/smooth-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:13:42] "[36mGET /static/assets/js/dark-mode-handler.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:13:42] "[36mGET /static/assets/js/soft-ui-dashboard.min.js?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:13:42] "GET /static/assets/img/curved-images/curved6.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:13:42] "[36mGET /static/assets/img/scrapeLogo1.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 273-556-629
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:15:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:15:32] "[36mGET /static/assets/css/nucleo-icons.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:15:32] "[36mGET /static/assets/css/nucleo-svg.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:15:32] "[36mGET /static/assets/css/soft-ui-dashboard.css?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:15:32] "[36mGET /static/assets/css/dark-theme-core.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:15:32] "[36mGET /static/assets/js/core/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:15:32] "[36mGET /static/assets/js/core/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:15:32] "[36mGET /static/assets/js/plugins/perfect-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:15:32] "[36mGET /static/assets/js/plugins/smooth-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:15:32] "[36mGET /static/assets/js/dark-mode-handler.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:15:32] "[36mGET /static/assets/js/soft-ui-dashboard.min.js?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:15:32] "[36mGET /static/assets/img/darkLogo.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:15:33] "[36mGET /static/assets/img/scrapeLogo1.png HTTP/1.1[0m" 304 -
+INFO:root:Input URL for Youtube Channel - https://www.youtube.com/user/krishnaik06
+INFO:root:Valid Youtube Channel - https://www.youtube.com/user/krishnaik06
+INFO:root:Channel Data inserted in MongoDB.....
+INFO:root:Video Data inserted in MongoDB.....
+INFO:root:Fetched Channel Data : {'profilePic': 'https://yt3.ggpht.com/ytc/AMLnZu_Ow7V1PyNJXmvxUmamZqNR3IMT94rkYdJ0mz-8xQ=s500-c-k-c0x00ffffff-no-rj', 'name': 'Krish Naik', 'description': "I am the cofounder of iNeuron and my experience is pioneering in machine learning, deep learning, and computer vision,an educator, and a mentor, with over 10 years' experience in the industry. This is my YouTube channel where I explain various topics on machine learning, deep learning, and AI with many real-world problem scenarios. I have delivered over 30 tech talks on data science, machine learning, and AI at various meet-ups, technical institutions, and community-arranged forums. My main aim is to make everyone familiar of ML and AI.Please subscribe and support the channel. As i love new technology, all these videos are free and I promise to make more interesting content as we go ahead.\nFor any collaboration drop me a mail at krishnaik06@gmail.com\n\nPlease free to drop a mail for Product unboxing, GPU's unboxing and any other collaboration", 'joined_date': '10 Feb 2012', 'totalViews': '60,862,751 views', 'subscribers': '648K subscribers', 'channelLink': 'https://www.youtube.com/user/krishnaik06', 'avg_views': '14,871', 'viewsList': [9300.0, 5200.0, 12000.0, 7000.0, 10000.0, 3900.0, 7500.0, 11000.0, 6900.0, 5300.0, 8200.0, 3900.0, 11000.0, 3000.0, 37000.0, 7700.0, 9700.0, 17000.0, 19000.0, 7600.0, 27000.0, 16000.0, 21000.0, 16000.0, 12000.0, 14000.0, 8900.0, 5300.0, 8300.0, 10000.0, 5200.0, 3700.0, 7300.0, 2200.0, 7100.0, 11000.0, 6700.0, 8000.0, 253000.0, 16000.0, 3700.0, 3600.0, 3500.0, 11000.0, 4600.0, 14000.0, 5900.0, 13000.0, 8500.0], 'avg_duration': 24.55, 'durationList': [8, 100, 4, 7, 6, 19, 33, 8, 7, 7, 4, 149, 26, 116, 164, 8, 130, 6, 10, 8, 3, 11, 3, 17, 8, 7, 67, 2, 8, 26, 6, 9, 10, 8, 7, 3, 9, 10, 8, 5, 19, 7, 17, 21, 13, 20, 9, 5, 45]}
+INFO:werkzeug: * Detected change in 'C:\\Users\\Asus\\Anaconda3\\Lib\\logging\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Asus\\Anaconda3\\Lib\\encodings\\cp1252.py', reloading
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:16:02] "POST /channel HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:16:02] "[36mGET /static/assets/css/nucleo-icons.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:16:02] "[36mGET /static/assets/css/nucleo-svg.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:16:02] "[36mGET /static/assets/css/soft-ui-dashboard.css?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:16:02] "[36mGET /static/assets/css/dark-theme-core.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:16:02] "[36mGET /static/assets/js/core/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:16:02] "[36mGET /static/assets/js/core/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:16:02] "[36mGET /static/assets/js/plugins/perfect-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:16:02] "[36mGET /static/assets/js/plugins/smooth-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:16:02] "[36mGET /static/assets/js/dark-mode-handler.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:16:02] "[36mGET /static/assets/js/soft-ui-dashboard.min.js?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:16:02] "[36mGET /static/assets/img/darkLogo.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:16:02] "GET /static/assets/js/plugins/chartjs.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:16:03] "GET /static/assets/fonts/nucleo-icons.woff2 HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 273-556-629
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\scrapingData\\scraping.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\scrapingData\\scraping.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\scrapingData\\scraping.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 273-556-629
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:16:59] "[36mGET /static/assets/img/scrapeLogo1.png HTTP/1.1[0m" 304 -
+INFO:root:Input URL for Youtube Channel - https://www.youtube.com/user/krishnaik06
+INFO:root:Valid Youtube Channel - https://www.youtube.com/user/krishnaik06
+INFO:root:Channel Data inserted in MongoDB.....
+INFO:root:Video Data inserted in MongoDB.....
+INFO:root:Fetched Channel Data.... 
+INFO:root:Fetched Video Data....
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:17:26] "POST /channel HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:17:26] "[36mGET /static/assets/css/nucleo-icons.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:17:26] "[36mGET /static/assets/css/nucleo-svg.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:17:26] "[36mGET /static/assets/css/soft-ui-dashboard.css?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:17:26] "[36mGET /static/assets/css/dark-theme-core.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:17:26] "[36mGET /static/assets/js/core/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:17:26] "[36mGET /static/assets/js/core/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:17:26] "[36mGET /static/assets/js/plugins/perfect-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:17:26] "[36mGET /static/assets/js/plugins/smooth-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:17:26] "[36mGET /static/assets/js/dark-mode-handler.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:17:26] "[36mGET /static/assets/js/plugins/chartjs.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:17:26] "[36mGET /static/assets/js/soft-ui-dashboard.min.js?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:17:26] "[36mGET /static/assets/img/darkLogo.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:17:27] "[36mGET /static/assets/img/darkLogo.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\chromeDriver\\driver.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\chromeDriver\\driver.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\chromeDriver\\driver.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\database\\mySQLConnector.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\database\\mySQLConnector.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\database\\mySQLConnector.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\scrapingData\\scraping.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\scrapingData\\scraping.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\scrapingData\\scraping.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 273-556-629
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Asus\\Anaconda3\\pkgs\\conda-4.14.0-py37haa95532_0\\Scripts\\conda-script.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 273-556-629
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 273-556-629
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:37:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:37:57] "[36mGET /static/assets/css/nucleo-icons.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:37:57] "[36mGET /static/assets/css/dark-theme-core.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:37:57] "[36mGET /static/assets/css/soft-ui-dashboard.css?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:37:57] "[36mGET /static/assets/css/nucleo-svg.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:37:57] "[36mGET /static/assets/js/core/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:37:57] "[36mGET /static/assets/js/core/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:37:57] "[36mGET /static/assets/js/plugins/perfect-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:37:57] "[36mGET /static/assets/js/plugins/smooth-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:37:57] "[36mGET /static/assets/js/dark-mode-handler.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:37:57] "[36mGET /static/assets/js/soft-ui-dashboard.min.js?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:37:57] "[36mGET /static/assets/img/darkLogo.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:37:57] "[36mGET /static/assets/img/scrapeLogo1.png HTTP/1.1[0m" 304 -
+INFO:root:Input URL for Youtube Channel - https://www.youtube.com/user/krishnaik06
+INFO:root:Valid Youtube Channel - https://www.youtube.com/user/krishnaik06
+INFO:root:Channel Data inserted in MySQL.....
+INFO:root:Channel Data inserted in MongoDB.....
+INFO:root:Video Data inserted in MySQL.....
+INFO:root:Video Data inserted in MongoDB.....
+INFO:root:Fetched Channel Data.... 
+INFO:root:Fetched Video Data....
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:38:49] "POST /channel HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:38:49] "[36mGET /static/assets/css/nucleo-icons.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:38:49] "[36mGET /static/assets/css/soft-ui-dashboard.css?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:38:49] "[36mGET /static/assets/css/nucleo-svg.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:38:49] "[36mGET /static/assets/img/darkLogo.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:38:49] "[36mGET /static/assets/css/dark-theme-core.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:38:49] "[36mGET /static/assets/js/core/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:38:49] "[36mGET /static/assets/js/core/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:38:49] "[36mGET /static/assets/js/plugins/perfect-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:38:49] "[36mGET /static/assets/js/plugins/smooth-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:38:49] "[36mGET /static/assets/js/dark-mode-handler.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:38:49] "[36mGET /static/assets/js/plugins/chartjs.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:38:49] "[36mGET /static/assets/js/soft-ui-dashboard.min.js?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:38:50] "[36mGET /static/assets/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:38:50] "[36mGET /static/assets/img/darkLogo.ico HTTP/1.1[0m" 304 -
+INFO:root:Fetched Video Link - https://www.youtube.com/watch?v=pZakG-kIt_o
+INFO:root:Valid Youtube Video Link - https://www.youtube.com/watch?v=pZakG-kIt_o
+INFO:root:Data Updated in MySQL....
+INFO:root:Comments Created in MySQL....
+INFO:root:Video Data updated in MongoDB.....
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:41:21] "POST /video HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:41:21] "[36mGET /static/assets/css/nucleo-svg.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:41:21] "[36mGET /static/assets/css/nucleo-icons.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:41:21] "[36mGET /static/assets/css/soft-ui-dashboard.css?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:41:21] "[36mGET /static/assets/css/dark-theme-core.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:41:21] "[36mGET /static/assets/js/core/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:41:21] "[36mGET /static/assets/js/core/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:41:21] "[36mGET /static/assets/js/plugins/perfect-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:41:21] "[36mGET /static/assets/js/plugins/smooth-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:41:21] "[36mGET /static/assets/js/dark-mode-handler.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:41:21] "[36mGET /static/assets/js/plugins/chartjs.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:41:21] "[36mGET /static/assets/js/soft-ui-dashboard.min.js?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:41:21] "[36mGET /static/assets/img/darkLogo.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:41:22] "[36mGET /static/assets/img/darkLogo.ico HTTP/1.1[0m" 304 -
+INFO:root:Download Details - https://www.youtube.com/embed/pZakG-kIt_o | Why Statistics Is Super Important For Data Science? Must Watch
+INFO:pytube.streams:downloading (118977870 total bytes) file to buffer
+INFO:pytube.streams:downloading (118977870 total bytes) file to buffer
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:43:23] "POST /download HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\utilities\\util.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\utilities\\util.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\utilities\\util.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 273-556-629
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:45:14] "[36mGET /static/assets/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:45:14] "[36mGET /static/assets/img/darkLogo.ico HTTP/1.1[0m" 304 -
+INFO:root:Fetched Video Link - https://www.youtube.com/watch?v=ngBPXUaScCw
+INFO:root:Valid Youtube Video Link - https://www.youtube.com/watch?v=ngBPXUaScCw
+ERROR:root:Video Page - Traceback (most recent call last):
+  File "D:\iNeuron Data Science\Full Stack Data Science\YoutubeScrapper\SourceCode\UtubeScraper\Modules\scrapingData\scraping.py", line 260, in getVideoData
+    row_count = MySQLConnector().updateVideo(likes, cmnts, url)
+  File "D:\iNeuron Data Science\Full Stack Data Science\YoutubeScrapper\SourceCode\UtubeScraper\Modules\database\mySQLConnector.py", line 118, in updateVideo
+    cursor.execute(update_query,(likes,url))
+AttributeError: 'NoneType' object has no attribute 'execute'
+
+ERROR:root:Video Page - Traceback (most recent call last):
+  File "D:\iNeuron Data Science\Full Stack Data Science\YoutubeScrapper\SourceCode\UtubeScraper\main.py", line 61, in getVideo
+    videoData,commentsList = scraping.Scraping().getVideoData(video_url,title,views,duration)
+TypeError: cannot unpack non-iterable NoneType object
+
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:45:40] "[33mPOST /video HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:45:40] "[36mGET /static/assets/css/nucleo-icons.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:45:40] "[36mGET /static/assets/css/nucleo-svg.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:45:40] "[36mGET /static/assets/css/soft-ui-dashboard.css?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:45:40] "[36mGET /static/assets/css/dark-theme-core.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:45:41] "[36mGET /static/assets/js/core/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:45:41] "[36mGET /static/assets/js/core/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:45:41] "[36mGET /static/assets/js/plugins/perfect-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:45:41] "[36mGET /static/assets/js/plugins/smooth-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:45:41] "[36mGET /static/assets/js/dark-mode-handler.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:45:41] "[36mGET /static/assets/js/soft-ui-dashboard.min.js?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:45:41] "[36mGET /static/assets/img/curved-images/curved6.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:45:41] "[36mGET /static/assets/img/scrapeLogo1.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 273-556-629
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:57:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:57:56] "[36mGET /static/assets/css/nucleo-svg.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:57:56] "[36mGET /static/assets/css/nucleo-icons.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:57:56] "[36mGET /static/assets/css/soft-ui-dashboard.css?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:57:56] "[36mGET /static/assets/css/dark-theme-core.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:57:56] "[36mGET /static/assets/js/core/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:57:56] "[36mGET /static/assets/js/core/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:57:56] "[36mGET /static/assets/js/plugins/perfect-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:57:56] "[36mGET /static/assets/js/plugins/smooth-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:57:56] "[36mGET /static/assets/js/dark-mode-handler.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:57:56] "[36mGET /static/assets/js/soft-ui-dashboard.min.js?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:57:56] "[36mGET /static/assets/img/darkLogo.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:57:56] "[36mGET /static/assets/img/scrapeLogo1.png HTTP/1.1[0m" 304 -
+INFO:root:Input URL for Youtube Channel - https://www.youtube.com/user/krishnaik06
+INFO:root:Valid Youtube Channel - https://www.youtube.com/user/krishnaik06
+INFO:root:Channel Data inserted in MongoDB.....
+INFO:root:Video Data inserted in MongoDB.....
+INFO:root:Fetched Channel Data.... 
+INFO:root:Fetched Video Data....
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:58:33] "POST /channel HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:58:33] "[36mGET /static/assets/css/nucleo-svg.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:58:33] "[36mGET /static/assets/css/nucleo-icons.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:58:33] "[36mGET /static/assets/css/soft-ui-dashboard.css?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:58:33] "[36mGET /static/assets/css/dark-theme-core.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:58:33] "[36mGET /static/assets/img/darkLogo.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:58:33] "[36mGET /static/assets/js/core/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:58:33] "[36mGET /static/assets/js/core/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:58:33] "[36mGET /static/assets/js/plugins/perfect-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:58:33] "[36mGET /static/assets/js/plugins/smooth-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:58:33] "[36mGET /static/assets/js/dark-mode-handler.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:58:33] "[36mGET /static/assets/js/plugins/chartjs.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:58:33] "[36mGET /static/assets/js/soft-ui-dashboard.min.js?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:58:33] "[36mGET /static/assets/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:58:33] "[36mGET /static/assets/img/darkLogo.ico HTTP/1.1[0m" 304 -
+INFO:root:Fetched Video Link - https://www.youtube.com/watch?v=ngBPXUaScCw
+INFO:root:Valid Youtube Video Link - https://www.youtube.com/watch?v=ngBPXUaScCw
+INFO:root:Data Updated in MySQL....
+INFO:root:Comments Created in MySQL....
+INFO:root:Video Data updated in MongoDB.....
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:59:04] "POST /video HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:59:04] "[36mGET /static/assets/css/nucleo-icons.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:59:04] "[36mGET /static/assets/css/nucleo-svg.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:59:04] "[36mGET /static/assets/css/soft-ui-dashboard.css?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:59:04] "[36mGET /static/assets/css/dark-theme-core.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:59:04] "[36mGET /static/assets/js/core/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:59:04] "[36mGET /static/assets/js/core/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:59:04] "[36mGET /static/assets/js/plugins/perfect-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:59:04] "[36mGET /static/assets/js/plugins/smooth-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:59:04] "[36mGET /static/assets/js/dark-mode-handler.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:59:04] "[36mGET /static/assets/js/plugins/chartjs.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:59:04] "[36mGET /static/assets/js/soft-ui-dashboard.min.js?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:59:04] "[36mGET /static/assets/img/darkLogo.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:59:05] "[36mGET /static/assets/img/darkLogo.ico HTTP/1.1[0m" 304 -
+INFO:pytube.streams:downloading (10813898 total bytes) file to buffer
+ERROR:root:Download Page - Traceback (most recent call last):
+  File "D:\iNeuron Data Science\Full Stack Data Science\YoutubeScrapper\SourceCode\UtubeScraper\main.py", line 91, in download
+    s3Path = util.uploadS3Video(link,file_name)
+  File "D:\iNeuron Data Science\Full Stack Data Science\YoutubeScrapper\SourceCode\UtubeScraper\Modules\utilities\util.py", line 21, in uploadS3Video
+    return path.encode("ascii")
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 130-133: ordinal not in range(128)
+
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:59:31] "[35m[1mPOST /download HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:59:31] "[36mGET /static/assets/css/nucleo-icons.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:59:31] "[36mGET /static/assets/css/nucleo-svg.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:59:31] "[36mGET /static/assets/css/soft-ui-dashboard.css?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:59:31] "[36mGET /static/assets/css/dark-theme-core.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:59:31] "[36mGET /static/assets/js/core/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:59:31] "[36mGET /static/assets/js/core/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:59:31] "[36mGET /static/assets/js/plugins/perfect-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:59:31] "[36mGET /static/assets/js/plugins/smooth-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:59:31] "[36mGET /static/assets/js/dark-mode-handler.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:59:31] "[36mGET /static/assets/js/soft-ui-dashboard.min.js?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:59:31] "[36mGET /static/assets/img/curved-images/curved6.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 11:59:31] "[36mGET /static/assets/img/scrapeLogo1.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\utilities\\util.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\utilities\\util.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\utilities\\util.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 273-556-629
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:02:14] "[36mGET /static/assets/img/darkLogo.ico HTTP/1.1[0m" 304 -
+INFO:pytube.streams:downloading (10813898 total bytes) file to buffer
+ERROR:root:Download Page - Traceback (most recent call last):
+  File "D:\iNeuron Data Science\Full Stack Data Science\YoutubeScrapper\SourceCode\UtubeScraper\main.py", line 91, in download
+    s3Path = util.uploadS3Video(link,file_name)
+  File "D:\iNeuron Data Science\Full Stack Data Science\YoutubeScrapper\SourceCode\UtubeScraper\Modules\utilities\util.py", line 21, in uploadS3Video
+    return base64.b64encode(bytes(path))
+TypeError: string argument without an encoding
+
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:02:35] "[35m[1mPOST /download HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:02:35] "[36mGET /static/assets/css/nucleo-icons.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:02:35] "[36mGET /static/assets/css/nucleo-svg.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:02:35] "[36mGET /static/assets/css/soft-ui-dashboard.css?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:02:35] "[36mGET /static/assets/css/dark-theme-core.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:02:35] "[36mGET /static/assets/js/core/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:02:35] "[36mGET /static/assets/js/core/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:02:35] "[36mGET /static/assets/js/plugins/perfect-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:02:35] "[36mGET /static/assets/js/plugins/smooth-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:02:35] "[36mGET /static/assets/js/dark-mode-handler.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:02:35] "[36mGET /static/assets/js/soft-ui-dashboard.min.js?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:02:35] "[36mGET /static/assets/img/curved-images/curved6.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:02:35] "[36mGET /static/assets/img/scrapeLogo1.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\utilities\\util.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\utilities\\util.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\utilities\\util.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\main.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\main.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\main.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 273-556-629
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:03:25] "[36mGET /static/assets/img/darkLogo.ico HTTP/1.1[0m" 304 -
+INFO:root:Download Details - https://www.youtube.com/embed/ngBPXUaScCw
+INFO:pytube.streams:downloading (10813898 total bytes) file to buffer
+INFO:pytube.streams:downloading (10813898 total bytes) file to buffer
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:03:42] "POST /download HTTP/1.1" 200 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 273-556-629
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:06:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:06:17] "[36mGET /static/assets/css/nucleo-icons.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:06:17] "[36mGET /static/assets/css/nucleo-svg.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:06:17] "[36mGET /static/assets/css/soft-ui-dashboard.css?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:06:17] "[36mGET /static/assets/css/dark-theme-core.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:06:17] "[36mGET /static/assets/js/core/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:06:17] "[36mGET /static/assets/js/core/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:06:17] "[36mGET /static/assets/js/plugins/perfect-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:06:17] "[36mGET /static/assets/js/plugins/smooth-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:06:17] "[36mGET /static/assets/js/dark-mode-handler.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:06:17] "[36mGET /static/assets/js/soft-ui-dashboard.min.js?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:06:17] "[36mGET /static/assets/img/darkLogo.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:06:17] "[36mGET /static/assets/img/scrapeLogo1.png HTTP/1.1[0m" 304 -
+INFO:root:Input URL for Youtube Channel - https://www.youtube.com/user/krishnaik06
+INFO:root:Valid Youtube Channel - https://www.youtube.com/user/krishnaik06
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\database\\mongoDBConnector.py', reloading
+INFO:root:Channel Data inserted in MongoDB.....
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 273-556-629
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:07:07] "[36mGET /static/assets/img/scrapeLogo1.png HTTP/1.1[0m" 304 -
+INFO:root:Input URL for Youtube Channel - https://www.youtube.com/user/krishnaik06
+INFO:root:Valid Youtube Channel - https://www.youtube.com/user/krishnaik06
+INFO:root:Channel Data inserted in MongoDB.....
+INFO:root:Video Data inserted in MongoDB.....
+INFO:root:Fetched Channel Data.... 
+INFO:root:Fetched Video Data....
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:07:34] "POST /channel HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:07:34] "[36mGET /static/assets/css/nucleo-icons.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:07:34] "[36mGET /static/assets/css/nucleo-svg.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:07:34] "[36mGET /static/assets/css/soft-ui-dashboard.css?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:07:34] "[36mGET /static/assets/css/dark-theme-core.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:07:34] "[36mGET /static/assets/img/darkLogo.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:07:34] "[36mGET /static/assets/js/core/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:07:34] "[36mGET /static/assets/js/core/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:07:34] "[36mGET /static/assets/js/plugins/perfect-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:07:34] "[36mGET /static/assets/js/plugins/smooth-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:07:34] "[36mGET /static/assets/js/dark-mode-handler.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:07:34] "[36mGET /static/assets/js/plugins/chartjs.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:07:34] "[36mGET /static/assets/js/soft-ui-dashboard.min.js?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:07:35] "[36mGET /static/assets/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:07:35] "[36mGET /static/assets/img/darkLogo.ico HTTP/1.1[0m" 304 -
+INFO:root:Fetched Video Link - https://www.youtube.com/watch?v=ngBPXUaScCw
+INFO:root:Valid Youtube Video Link - https://www.youtube.com/watch?v=ngBPXUaScCw
+INFO:root:Comments Created in MySQL....
+INFO:root:Video Data updated in MongoDB.....
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:08:07] "POST /video HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:08:07] "[36mGET /static/assets/css/nucleo-icons.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:08:07] "[36mGET /static/assets/css/nucleo-svg.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:08:07] "[36mGET /static/assets/css/soft-ui-dashboard.css?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:08:07] "[36mGET /static/assets/css/dark-theme-core.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:08:07] "[36mGET /static/assets/js/core/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:08:07] "[36mGET /static/assets/js/core/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:08:08] "[36mGET /static/assets/js/plugins/perfect-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:08:08] "[36mGET /static/assets/js/plugins/smooth-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:08:08] "[36mGET /static/assets/js/dark-mode-handler.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:08:08] "[36mGET /static/assets/js/plugins/chartjs.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:08:08] "[36mGET /static/assets/js/soft-ui-dashboard.min.js?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:08:08] "[36mGET /static/assets/img/darkLogo.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:08:08] "[36mGET /static/assets/img/darkLogo.ico HTTP/1.1[0m" 304 -
+INFO:root:Download Details - https://www.youtube.com/embed/ngBPXUaScCw
+INFO:pytube.streams:downloading (10813898 total bytes) file to buffer
+INFO:pytube.streams:downloading (10813898 total bytes) file to buffer
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:08:31] "POST /download HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\database\\mySQLConnector.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\database\\mySQLConnector.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\database\\mySQLConnector.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 273-556-629
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Download Details - https://www.youtube.com/embed/ngBPXUaScCw
+INFO:pytube.streams:downloading (10813898 total bytes) file to buffer
+INFO:pytube.streams:downloading (10813898 total bytes) file to buffer
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:09:58] "POST /download HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\database\\mySQLConnector.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\database\\mySQLConnector.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\database\\mySQLConnector.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 273-556-629
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Download Details - https://www.youtube.com/embed/ngBPXUaScCw
+INFO:pytube.streams:downloading (10813898 total bytes) file to buffer
+INFO:pytube.streams:downloading (10813898 total bytes) file to buffer
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:11:14] "POST /download HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\utilities\\util.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\utilities\\util.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\utilities\\util.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 273-556-629
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Download Details - https://www.youtube.com/embed/ngBPXUaScCw
+INFO:pytube.streams:downloading (10813898 total bytes) file to buffer
+INFO:pytube.streams:downloading (10813898 total bytes) file to buffer
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:14:27] "POST /download HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\database\\mySQLConnector.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\database\\mySQLConnector.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\database\\mySQLConnector.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 273-556-629
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\database\\mySQLConnector.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\database\\mySQLConnector.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\database\\mySQLConnector.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 273-556-629
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\database\\mySQLConnector.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\database\\mySQLConnector.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 273-556-629
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 273-556-629
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:19:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:19:03] "[36mGET /static/assets/css/nucleo-icons.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:19:03] "[36mGET /static/assets/css/nucleo-svg.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:19:03] "[36mGET /static/assets/css/soft-ui-dashboard.css?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:19:03] "[36mGET /static/assets/css/dark-theme-core.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:19:03] "[36mGET /static/assets/js/core/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:19:03] "[36mGET /static/assets/js/core/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:19:03] "[36mGET /static/assets/js/plugins/perfect-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:19:03] "[36mGET /static/assets/js/plugins/smooth-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:19:03] "[36mGET /static/assets/js/dark-mode-handler.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:19:03] "[36mGET /static/assets/js/soft-ui-dashboard.min.js?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:19:03] "[36mGET /static/assets/img/darkLogo.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:19:03] "[36mGET /static/assets/img/scrapeLogo1.png HTTP/1.1[0m" 304 -
+INFO:root:Input URL for Youtube Channel - https://www.youtube.com/user/krishnaik06
+INFO:root:Valid Youtube Channel - https://www.youtube.com/user/krishnaik06
+INFO:werkzeug: * Detected change in 'C:\\Users\\Asus\\Anaconda3\\Lib\\site-packages\\pymongo\\settings.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Asus\\Anaconda3\\Lib\\site-packages\\pymongo\\mongo_client.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\libraries\\flask_cors\\decorator.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Asus\\Anaconda3\\Lib\\site-packages\\flask\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Asus\\Anaconda3\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Asus\\Anaconda3\\Lib\\site-packages\\werkzeug\\serving.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Asus\\Anaconda3\\Lib\\http\\server.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Asus\\Anaconda3\\Lib\\socketserver.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Asus\\Anaconda3\\Lib\\threading.py', reloading
+INFO:root:Channel Data inserted in MongoDB.....
+INFO:root:Video Data inserted in MongoDB.....
+INFO:root:Fetched Channel Data.... 
+INFO:root:Fetched Video Data....
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:19:35] "POST /channel HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:19:35] "[36mGET /static/assets/css/nucleo-icons.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:19:35] "[36mGET /static/assets/css/nucleo-svg.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:19:35] "[36mGET /static/assets/css/soft-ui-dashboard.css?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:19:35] "[36mGET /static/assets/css/dark-theme-core.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:19:35] "[36mGET /static/assets/img/darkLogo.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:19:35] "[36mGET /static/assets/js/core/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:19:35] "[36mGET /static/assets/js/core/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:19:35] "[36mGET /static/assets/js/plugins/perfect-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:19:35] "[36mGET /static/assets/js/plugins/smooth-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:19:35] "[36mGET /static/assets/js/dark-mode-handler.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:19:35] "[36mGET /static/assets/js/plugins/chartjs.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:19:35] "[36mGET /static/assets/js/soft-ui-dashboard.min.js?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:19:35] "[36mGET /static/assets/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 273-556-629
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:Fetched Video Link - https://www.youtube.com/watch?v=pZakG-kIt_o
+INFO:root:Valid Youtube Video Link - https://www.youtube.com/watch?v=pZakG-kIt_o
+INFO:root:Data Updated in MySQL....
+INFO:root:Comments Created in MySQL....
+INFO:root:Video Data updated in MongoDB.....
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:20:10] "POST /video HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:20:10] "[36mGET /static/assets/css/soft-ui-dashboard.css?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:20:10] "[36mGET /static/assets/css/nucleo-icons.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:20:10] "[36mGET /static/assets/css/nucleo-svg.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:20:10] "[36mGET /static/assets/css/dark-theme-core.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:20:10] "[36mGET /static/assets/js/core/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:20:10] "[36mGET /static/assets/js/core/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:20:10] "[36mGET /static/assets/js/plugins/perfect-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:20:10] "[36mGET /static/assets/js/plugins/smooth-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:20:10] "[36mGET /static/assets/js/dark-mode-handler.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:20:10] "[36mGET /static/assets/js/plugins/chartjs.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:20:10] "[36mGET /static/assets/js/soft-ui-dashboard.min.js?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:20:10] "[36mGET /static/assets/img/darkLogo.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 12:20:11] "[36mGET /static/assets/img/darkLogo.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 273-556-629
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:39:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:39:27] "GET /static/assets/css/nucleo-icons.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:39:27] "GET /static/assets/css/soft-ui-dashboard.css?v=1.0.6 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:39:27] "GET /static/assets/css/nucleo-svg.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:39:27] "GET /static/assets/css/dark-theme-core.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:39:27] "GET /static/assets/js/core/popper.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:39:27] "GET /static/assets/img/darkLogo.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:39:27] "GET /static/assets/js/core/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:39:27] "GET /static/assets/js/plugins/perfect-scrollbar.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:39:27] "GET /static/assets/js/plugins/smooth-scrollbar.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:39:27] "GET /static/assets/js/dark-mode-handler.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:39:27] "GET /static/assets/js/soft-ui-dashboard.min.js?v=1.0.6 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:39:27] "[36mGET /static/assets/css/nucleo-svg.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:39:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:39:27] "[36mGET /static/assets/js/core/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:39:27] "[36mGET /static/assets/js/core/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:39:27] "[36mGET /static/assets/js/plugins/perfect-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:39:27] "[36mGET /static/assets/js/plugins/smooth-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:39:27] "[36mGET /static/assets/js/dark-mode-handler.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:39:27] "[36mGET /static/assets/js/soft-ui-dashboard.min.js?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:39:27] "GET /static/assets/img/scrapeLogo1.png HTTP/1.1" 200 -
+INFO:root:Input URL for Youtube Channel - https://www.youtube.com/user/krishnaik06
+INFO:root:Valid Youtube Channel - https://www.youtube.com/user/krishnaik06
+INFO:root:Channel Data inserted in MySQL.....
+INFO:werkzeug: * Detected change in 'C:\\Users\\Asus\\Anaconda3\\Lib\\site-packages\\pymongo\\settings.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Asus\\Anaconda3\\Lib\\site-packages\\pymongo\\mongo_client.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\database\\mongoDBConnector.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\Modules\\scrapingData\\scraping.py', reloading
+INFO:werkzeug: * Detected change in 'D:\\iNeuron Data Science\\Full Stack Data Science\\YoutubeScrapper\\SourceCode\\UtubeScraper\\libraries\\flask_cors\\decorator.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Asus\\Anaconda3\\Lib\\site-packages\\flask\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Asus\\Anaconda3\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Asus\\Anaconda3\\Lib\\site-packages\\werkzeug\\serving.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Asus\\Anaconda3\\Lib\\http\\server.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Asus\\Anaconda3\\Lib\\socketserver.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Asus\\Anaconda3\\Lib\\threading.py', reloading
+INFO:root:Channel Data inserted in MongoDB.....
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 273-556-629
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:44:42] "[36mGET /static/assets/img/scrapeLogo1.png HTTP/1.1[0m" 304 -
+INFO:root:Input URL for Youtube Channel - https://www.youtube.com/user/krishnaik06
+INFO:root:Valid Youtube Channel - https://www.youtube.com/user/krishnaik06
+INFO:root:Channel Data inserted in MongoDB.....
+INFO:root:Video Data inserted in MySQL.....
+INFO:root:Video Data inserted in MongoDB.....
+INFO:root:Fetched Channel Data.... 
+INFO:root:Fetched Video Data....
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:45:21] "POST /channel HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:45:21] "[36mGET /static/assets/css/nucleo-icons.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:45:21] "[36mGET /static/assets/css/nucleo-svg.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:45:21] "[36mGET /static/assets/css/soft-ui-dashboard.css?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:45:21] "[36mGET /static/assets/css/dark-theme-core.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:45:21] "[36mGET /static/assets/img/darkLogo.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:45:21] "[36mGET /static/assets/js/core/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:45:21] "[36mGET /static/assets/js/core/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:45:21] "[36mGET /static/assets/js/plugins/perfect-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:45:21] "[36mGET /static/assets/js/plugins/smooth-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:45:21] "[36mGET /static/assets/js/dark-mode-handler.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:45:21] "GET /static/assets/js/plugins/chartjs.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:45:21] "[36mGET /static/assets/js/soft-ui-dashboard.min.js?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:45:21] "[36mGET /static/assets/fonts/nucleo-icons.woff2 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:45:21] "[36mGET /static/assets/img/darkLogo.ico HTTP/1.1[0m" 304 -
+INFO:root:Fetched Video Link - https://www.youtube.com/watch?v=pZakG-kIt_o
+INFO:root:Valid Youtube Video Link - https://www.youtube.com/watch?v=pZakG-kIt_o
+INFO:root:Data Updated in MySQL....
+INFO:root:Comments Created in MySQL....
+INFO:root:Video Data updated in MongoDB.....
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:47:16] "POST /video HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:47:16] "[36mGET /static/assets/css/dark-theme-core.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:47:16] "[36mGET /static/assets/css/nucleo-svg.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:47:16] "[36mGET /static/assets/css/nucleo-icons.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:47:16] "[36mGET /static/assets/css/soft-ui-dashboard.css?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:47:16] "[36mGET /static/assets/js/core/popper.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:47:16] "[36mGET /static/assets/js/core/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:47:16] "[36mGET /static/assets/js/plugins/perfect-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:47:16] "[36mGET /static/assets/js/plugins/smooth-scrollbar.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:47:16] "[36mGET /static/assets/js/dark-mode-handler.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:47:16] "[36mGET /static/assets/js/plugins/chartjs.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:47:16] "[36mGET /static/assets/img/darkLogo.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:47:16] "[36mGET /static/assets/js/soft-ui-dashboard.min.js?v=1.0.6 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:47:17] "[36mGET /static/assets/img/darkLogo.ico HTTP/1.1[0m" 304 -
+INFO:root:Download Details - https://www.youtube.com/embed/pZakG-kIt_o
+INFO:pytube.streams:downloading (35033990 total bytes) file to buffer
+INFO:pytube.streams:downloading (35033990 total bytes) file to buffer
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2022 13:48:24] "POST /download HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Asus\\Anaconda3\\Scripts\\conda-script.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Asus\\Anaconda3\\Lib\\site-packages\\pkg_resources\\_vendor\\pyparsing.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 273-556-629
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Asus\\Anaconda3\\Scripts\\jupyter-script.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\Asus\\Anaconda3\\Scripts\\jupyter-notebook-script.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 273-556-629
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'C:\\Users\\Asus\\Anaconda3\\Lib\\site-packages\\debugpy\\_vendored\\pydevd\\_pydevd_bundle\\pydevd_exec.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 273-556-629
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
