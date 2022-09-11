@@ -14,9 +14,9 @@ class ChromeDriver:
             CHROMEDRIVER_PATH = '/app/.chromedriver/bin/chromedriver'
             opt = webdriver.ChromeOptions()
             opt.add_argument('headless')
-            chrome_options.add_argument('--disable-gpu')
-            chrome_options.add_argument('--no-sandbox')
-            chrome_options.binary_location = GOOGLE_CHROME_PATH
+            opt.add_argument('--disable-gpu')
+            opt.add_argument('--no-sandbox')
+            opt.binary_location = GOOGLE_CHROME_PATH
             driver = webdriver.Chrome(CHROMEDRIVER_PATH, options=opt)
             return driver
         except Exception as e:
