@@ -17,6 +17,7 @@ urllib3==1.25.10
 Werkzeug==1.0.1
 mysql-connector-python
 pymongo
+pymongo[srv]
 selenium
 pytube
 boto3
