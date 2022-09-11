@@ -94,7 +94,7 @@ class Scraping:
 
             driver = self.driver
             driver.get(url + '/about')
-            ChromeDriver().scrollPageEnd(driver)
+            time.sleep(3)
             
             dp = driver.find_element_by_xpath('/html/body/ytd-app/div[1]/ytd-page-manager/ytd-browse/div[3]/ytd-c4-tabbed-header-renderer/tp-yt-app-header-layout/div/tp-yt-app-header/div[2]/div[2]/div/div[1]/yt-img-shadow/img').get_attribute('src')
 
