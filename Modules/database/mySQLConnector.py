@@ -5,8 +5,7 @@ class MySQLConnector:
     def getCursor(self):
         try:
             self.mydb = conn.connect(host="database-1.cleqdbolhsqb.us-west-2.rds.amazonaws.com",
-                    user = "kuttral_user", passwd = "Kuttral25_04", db="youtube_scrapper")
-            #self.mydb = conn.connect(host="localhost",user = "root", passwd = "Kuttral25/04", db="youtube_scrapper")
+                    user = "user", passwd = "password", db="youtube_scrapper")
             cursor = self.mydb.cursor()
             return cursor
         except Exception as e:
