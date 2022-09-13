@@ -6,8 +6,8 @@ import base64
 
 def getS3Client():
     client = boto3.client('s3',
-                          aws_access_key_id='AKIA5WH7MOAWR5PMGNF2',
-                          aws_secret_access_key='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')
+                          aws_access_key_id='access_key',
+                          aws_secret_access_key='secret_key')
     return client
 
 ########################################################################################################################
